@@ -8,6 +8,7 @@ require('dotenv').config()
 
 
 //middleware
+app.use(express.static('./public'))
 app.use(express.json()) // if we don't use the we won't have that data in req.body
 
 //routes
